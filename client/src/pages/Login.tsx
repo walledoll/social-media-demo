@@ -6,7 +6,7 @@ import { Label } from '@radix-ui/react-label'
 export default function Login() {
   return (
     <div className='flex justify-center items-center h-[100vh]'>
-        <Card className='w-[30em] gap-1 p-5'>
+        <Card className='w-100w gap-2 p-5'>
           <CardTitle className='text-center'>Login</CardTitle>
             <Label>Email</Label>
             <Input type="email"/>
