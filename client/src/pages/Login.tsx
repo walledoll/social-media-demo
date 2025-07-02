@@ -9,13 +9,15 @@ export default function Login() {
   return (
     <div className='flex justify-center items-center h-[100vh]'>
         <Card className='w-100 gap-2 p-5'>
-          <CardTitle className='text-center'>Login</CardTitle>
-            <Label>Email</Label>
-            <Input type="email"/>
-            <Label>Password</Label>
-            <Input type='password'/>
-            <Button type='submit'>Login</Button>
-            <Label>Have not registered? <a href="/register">Register</a></Label>
+            <CardTitle className='text-center'>Login</CardTitle>
+            <form action="">
+              <Label>Email</Label>
+              <Input required type="email"/>
+              <Label>Password</Label>
+              <Input required type='password'/>
+              <Button className='block w-[100%]' type='submit'>Login</Button>
+              <Label className='block place-self-center'>Have not registered? <a href="/register">Register</a></Label>
+            </form>
         </Card>
     </div>
   )

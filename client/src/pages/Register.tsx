@@ -8,19 +8,22 @@ export default function Register() {
     <div className="flex h-[100vh] justify-center items-center">
       <Card className='w-100 gap-2 p-5'>
           <CardTitle className='text-center'>Register</CardTitle>
-          <Label>Name</Label>
-          <Input type='text'></Input>
-          <Label>Surname</Label>
-          <Input type='text'></Input>
-          <Label>Phone</Label>
-          <Input type='tel'></Input>
-          <Label>Email</Label>
-          <Input type="email"/>
-          <Label>Password</Label>
-          <Input type='password'/>
-          <Button type='submit'>Register</Button>
-          <Label>Already have account? <a href="/login">Login</a></Label>
+          <form action="">
+            <Label>Name</Label>
+            <Input required type='text'></Input>
+            <Label>Surname</Label>
+            <Input required type='text'></Input>
+            <Label>Phone</Label>
+            <Input required type='tel'></Input>
+            <Label>Email</Label>
+            <Input required type="email"/>
+            <Label>Password</Label>
+            <Input required type='password'/>
+            <Button className='block w-[100%]' type='submit'>Register</Button>
+            <Label className='block place-self-center'>Already have account? <a href="/login">Login</a></Label>
+          </form>
         </Card>
     </div>
+    
   )
 }
