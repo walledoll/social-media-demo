@@ -1,4 +1,3 @@
-import A from '@/components/ui/a'
 import { Button } from '@/components/ui/button'
 import { Card, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
@@ -15,7 +14,7 @@ export default function Login() {
               <Input required type="email"/>
               <Label>Password</Label>
               <Input required type='password'/>
-              <Button className='block w-[100%]' type='submit'>Login</Button>
+              <Button className='block mt-3 w-[100%]' type='submit'>Login</Button>
               <Label className='block place-self-center'>Have not registered? <a href="/register">Register</a></Label>
             </form>
         </Card>
